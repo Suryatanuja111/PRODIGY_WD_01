@@ -1,0 +1,68 @@
+/* Basic reset for margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Unordered list styling */
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display items in a row */
+}
+
+/* List item styling */
+#navbar ul li {
+    margin: 0 10px;
+}
+
+/* Anchor link styling */
+#navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for hover effects */
+}
+
+/* Hover effect for anchor links */
+#navbar ul li a:hover {
+    background-color: #575757; /* Darker background on hover */
+    color: #ffffff; /* Keep text color white */
+}
+
+/* Content padding to prevent content overlap with fixed navbar */
+.content {
+    padding-top: 60px; /* Adjust according to the height of the navbar */
+}
+
+/* Section styling for demonstration */
+section {
+    padding: 60px;
+    height: 100vh;
+}
+
+/* Alternating section background colors */
+section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+section:nth-child(odd) {
+    background-color: #ffffff;
+}
